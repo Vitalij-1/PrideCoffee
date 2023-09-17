@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrideCoffee</title>
+    <link rel="icon" href="Изображения/ЛОГОТИП.png" type="image/png">
+    <link rel="stylesheet" href="PrideCoffee.css">
+    <link rel="stylesheet" type="text/css" href="books.css" />
+    <link rel="stylesheet" href="./Feedback.css">
+    <link rel="stylesheet" href="./vacansy.css">
+    <script src="./Feedback.js"></script>
+    <script src="./vacansy.js"></script>
+    <script src="./vacansy_footer.js"></script>
+    <script src="jquery/jquery-3.6.4.js"></script>
+    <script src="modernizr.js"></script>
+    <script src="jquery.js"></script>
+    <script src="jquery.pictureflip.js"></script>
+    <script src="Collecting_Jod_Form_Data.js"></script>
+    <script src="Collecting_Feedback_Form_Data.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#flipbook').pictureflip({ time: 1000, start: 1 });
+
+        });
+    </script>
+</head>
+<body class="background_pages" style="overflow: scroll;">
+    <header class="background_header">
+        <div class="block_header">
+            <div class="block_header_logo">
+                <a href="#main"><img class="header_logo" src="Изображения/Logo 2.png" alt="logo" /></a>
+                <div class="block_logo_title">
+                    <p class="logo_text1">PRIDE</p>
+                    <p class="logo_text2">COFFEE</p>
+                </div>
+            </div>
+            <menu class="menu">
+                <div>
+                    <img class="burger_menu_close" src="Изображения/бургерменю/burg_close.png" alt="menu_close" />
+                </div>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#about_us">О нас</a></li>
+                <li><a href="#news">Новинки</a></li>
+                <li><a href="#great_deals">Акции</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><button class="open_modal_vacansy" id="open_modal_vacansy">Вакансии</button></li>
+            </menu>
+            <img class="burger_menu" src="Изображения/бургерменю/burgmenu.png" alt="menu" />
+        </div>
+    </header>
+    <main class="background_main" id="main">
+        <div class="introduction_container">
+            <div class="text_container">
+                <div class="words_container">
+                    <p class="introductory_words">Кофе решает всё</p>
+                    <p class="introductory_text">А какой лучший для тебя? Решаешь только ты!</p>
+                    <a href="#openModal" class="button_frame_1630">Выбирай тут</a>
+                </div>
+            </div>
+            <div class="image_container">
+                <img class="coffee_image" src="Изображения/img_coffee.png" alt="photo">
+            </div>
+        </div>
+        <div class="advantages_1">
+            <h2 class="heading_advantages_1">Наши преимущества</h2>
+            <div class="block_icons">
+                <div class="column_1">
+                    <img class="icon_1" src="Изображения/Icon_1.png" alt="icon">
+                    <h2 class="heading_column">100%</h2>
+                    <p class="text_column">Арабика</p>
+                </div>
+                <div class="column_2">
+                    <img class="icon_2" src="Изображения/Icon_2.png" alt="icon">
+                    <h2 class="heading_column">27</h2>
+                    <p class="text_column">Топингов</p>
+                </div>
+                <div class="column_3">
+                    <img class="icon_3" src="Изображения/Icon_3.png" alt="icon">
+                    <h2 class="heading_column">50</h2>
+                    <p class="text_column">Вариантов напитков</p>
+                </div>
+                <div class="column_4">
+                    <img class="icon_4" src="Изображения/Icon_4.png" alt="icon">
+                    <h2 class="heading_column">10</h2>
+                    <p class="text_column">Десертов</p>
+                </div>
+                <div class="column_5">
+                    <img class="icon_5" src="Изображения/Icon_5.png" alt="icon">
+                    <h2 class="heading_column">25</h2>
+                    <p class="text_column">Видов пицц</p>
+                </div>
+            </div>
+        </div>
+        <div class="frame_1628" id="about_us">
+            <div class="block_frame1">
+                <div class="block_photo_frame1655">
+                    <img class="photo_frame_1655" src="Изображения/Frame_1655.png" />
+                </div>
+                <div class="block_text_frame1655">
+                    <p class="text_frame">PrideCoffee — это кофейня с атмосферой дружеского семейного прайда. Мы готовим
+                        для
+                        наших
+                        посетителей восхитительный кофе, который имеет насыщенный аромат и приятную пенку.<br /><br /> В нашем меню
+                        представлены
+                        традиционные напитки и, фито- бар, что радует посетителей, а для детей молочные коктейли и соки.
+                        В
+                        Pride Coffee
+                        есть продукция собственного производства – сладости, выпечка, десерты, пицца. Также представлено
+                        меню для
+                        веганов.
+                    </p>
+                </div>
+            </div>
+            <div class="block_frame2">
+                <div class="block_text_frame1654">
+                    <p class="text_frame">Мы стараемся, чтобы в наших кофейнях поддерживалась теплая, семейная атмосфера. Здесь каждый может
+                        посидеть с ароматным кофе, поработать в тишине, отдохнуть с друзьями
+                        за настольными играми. У нас всегда играет непринужденная музыка, чтобы вы могли пообщаться комфортно с близким
+                        человеком.<br /><br />
+                        Время, проведенное у нас, станет приятным событием дня.
+                        Стань частью нашего Прайда!
+                    
+                    </p>
+                </div>
+                <div class="block_photo_frame1654">
+                    <img class="photo_frame_1654" src="Изображения/Frame_1654.png" />
+                </div>
+            </div>
+        </div>
+        <div class="advantages_2">
+            <div class="block_point">
+                <img class="icon_menu_book" src="Изображения/menu_book.png" alt="icon" />
+                <p class="advantages_title">Продуманное меню</p>
+                <p class="advantage_text">
+                    Ассортимент кофейни состоит из разнообразных напитков, пиццы, свежей выпечки и десертов
+                </p>
+            </div>
+            <div class="block_point">
+                <img class="icon_coffee" src="Изображения/coffee.png" alt="icon" />
+                <p class="advantages_title">Качественный кофе</p>
+                <p class="advantage_text">
+                    Кофе, сваренный на зерне 100% Арабики
+                </p>
+            </div>
+            <div class="block_point">
+                <img class="icon_chair" src="Изображения/chair.png" alt="icon" />
+                <p class="advantages_title">Уютный интерьер</p>
+                <p class="advantage_text">
+                    Теплый свет, ненавязчивая музыка, мягкие диваны, заботливая и доброжелательная атмосфера
+                </p>
+            </div>
+        </div>
+        <div class="news" id="news">
+            <h2 class="news_title">Новинки</h2>
+            <p class="news_subtitle">Мы растем и с нами расширяется меню</p>
+            <div class="block_cookies">
+                <div class="block_text_cookies">
+                    <p class="text_news">Недавно меню десертов пополнили: восхитительные воздушные маффины с тающим во
+                        рту
+                        шоколадом;<br>
+                        аппетитное печенье с кусочками молочного шоколада или сладким изюмом.</p>
+                </div>
+                <div class="block_photo_cookies">
+                    <img class="photo_cookies" src="Изображения/image 95.png" alt="products" />
+                </div>
+            </div>
+            <div class="block_desert">
+                <div class="block_photo_desert">
+                    <img class="photo_desert" src="Изображения/image 96.png" alt="products" />
+                </div>
+                <div class="block_text_desert">
+                    <p class="text_news">Крафтовый фисташковый торт соблюдает в себе баланс сладости сливочной основы и
+                        кислинки ягод
+                        малины.<br /><br /> Вы можете самостоятельно создать вкус напитка с помощью конструктора кофе.
+                        Попробуйте кофе с
+                        разными
+                        добавками: со льдом, сиропом или альтернативным молоком.</p>
+                </div>
+            </div>
+            <div class="block_coffee">
+                <div class="block_text_coffee">
+                    <p class="text_news">ЛЛатте «Snickers» – топовая новинка для любителей сладких ощущений! Эспрессо, молоко, взбитые
+                        сливки, карамельный и шоколадный соусы, сиропы и «изюминка» напитка – батончик «Snickers» не оставят
+                        равнодушными сладкоежек.</p>
+                </div>
+                <div class="block_photo_coffee">
+                    <img class="photo_coffee" src="Изображения/image 97.png" alt="products" />
+                </div>
+            </div>
+            <div class="block_pizza">
+                <div class="block_photo_pizza">
+                    <img class="photo_pizza" src="Изображения/image 98.png" alt="products" />
+                </div>
+                <div class="block_text_pizza">
+                    <p class="text_news">Обновленное меню пиццы
+                        Благодаря пикантности сыра и жареным креветкам пицца Том-ям порадует гурманов острым вкусом с кисловатыми
+                        нотками.<br /><br />
+                        Пряная пепперони в дуэте со слайсами альпийских колбасок оставит приятные впечатления о визите.</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu_maps" id="menu">
+            <h2 class="menu_title">Меню</h2>
+            <div class="navigation_menu_maps">
+                <a href="#openModal" class="boks_1"><img class="icon_map_1" src="Изображения/icon_map_1.png" alt=""></a>
+                <a href="#openModal" class="boks_2"><img class="icon_map_2" src="Изображения/icon_map_2.png" alt=""></a>
+                <a href="#openModal" class="boks_3"><img class="icon_map_3" src="Изображения/icon_map_3.png" alt=""></a>
+            </div>
+        </div>
+        <div id="openModal" class="modal" style="margin: 0;">
+            <div class="modal-dialog">
+                  <a href="#close" title="Close" class="close">×</a>
+                <div class="modal-body">
+                    <div id="container" class="tk-chaparral-pro">
+                        <div id="flipbook">
+                            <div id="image-1">
+                                <div class="content"><a href="#"></a></div>
+                            </div>
+                            <div id="image-2">
+                                <div class="content"><a href="#"></a></div>
+                            </div>
+                            <div id="image-3">
+                                <div class="content"><a href="#"></a></div>
+                            </div>
+                            <div id="image-4">
+                                <div class="content"><a href="#"></a></div>
+                            </div>
+                            <div id="image-5">
+                                <div class="content"><a href="#"></a></div>
+                            </div>
+                            <div id="image-6">
+                                <div class="content"><a href="#"></a></div>
+                            </div>
+                            <div id="image-7">
+                                <div class="content"><a href="#"></a></div>
+                            </div>
+                            <div id="image-8">
+                                <div class="content"><a href="#"></a></div>
+                            </div>
+                            <div id="image-9">
+                                <div class="content"><a href="#"></a></div>
+                            </div>
+                            <div id="image-10">
+                                <div class="content"><a href="#"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="great_deals" id="great_deals">
+            <h2 class="great_deals_title">Выгодные предложения</h2>
+            <div class="block_great_deals">
+                <div class="blocks_deals">
+                    <div class="block_proposal">
+                        <div class="block_icon_1">
+                            <img class="icon_proposal1" src="Изображения/Icon_1_proposal.png" alt="icon">
+                        </div>
+                        <div class="block_text_1">
+                            <h3 class="title_proposal">1+1=3</h3>
+                            <p class="text_proposal">Меняем законы арифметики. Бери больше - закажи 2 пиццы, а третью мы
+                                подарим
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block_proposal">
+                        <div class="block_icon_1">
+                            <img class="icon_proposal1" src="Изображения/Icon_3__proposal.png" alt="icon">
+                        </div>
+                        <div class="block_text_1">
+                            <h3 class="title_proposal">-10% в день рождения</h3>
+                            <p class="text_proposal">Скидка 10% на все меню в честь твоего дня рождения</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blocks_deals">
+                    <div class="block_proposal">
+                        <div class="block_icon_2">
+                            <img class="icon_proposal2" src="Изображения/Icon_2__proposal.png" alt="icon">
+                        </div>
+                        <div class="block_text_2">
+                            <h3 class="title_proposal">50/50</h3>
+                            <p class="text_proposal">Союз пицц - предлагаем собрать свою пиццу из двух половинок любимых
+                                пицц
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block_proposal">
+                        <div class="block_icon_2">
+                            <img class="icon_proposal2" src="Изображения/Icon_4__proposal.png" alt="icon">
+                        </div>
+                        <div class="block_text_2">
+                            <h3 class="title_proposal">-5% для сотрудников</h3>
+                            <p class="text_proposal">Скидки для сотрудников ТЦ 5% на все меню</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <p class="text_details">*Подробности уточняйте у сотрудников кофейни</p>
+            </div>
+        </div>
+        <div class="reviews" id="reviews">
+            <h2 class="title_reviews">Отзывы</h2>
+            <div class="block_reviews">
+                <div class="block_reviews_visitor">
+                    <img class="avatar_1" src="Изображения/Avatar_1.png" alt="profile_picture">
+                    <div class="block_text_reviews">
+                        <p class="name_visitor">Алёна М.</p>
+                        <p class="text_reviews1">Очень классная кофейня и кофе. Для меня важным пунктом стало, что в
+                            других
+                            кофейнях кофе может
+                            быть с привкусом алкоголя, но в этой такого нет.</p>
+                    </div>
+                </div>
+                <div class="block_reviews_visitor">
+                    <img class="avatar_2" src="Изображения/Avatar_2.png" alt="profile_picture">
+                    <div class="block_text_reviews">
+                        <p class="name_visitor">Мария Ч.</p>
+                        <p class="text_reviews1">Хожу в эту кофейню около года. Очень довольна работой бариста Софи,
+                            всегда
+                            улыбчивая и
+                            доброжелательная, все делает быстро и качественно !</p>
+                    </div>
+                </div>
+                <div class="block_reviews_visitor">
+                    <img class="avatar_3" src="Изображения/Avatar_3.png" alt="profile_picture">
+                    <div class="block_text_reviews">
+                        <p class="name_visitor">Ксения К.</p>
+                        <p class="text_reviews2">Хожу в эту кофейню уже более полугода. Здесь действительно самый
+                            вкусный
+                            кофе по адекватной
+                            цене! Большое разнообразие сиропов, поэтому можно поэкспериментировать.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location_map" id="address">
+            <h2 class="location_map_title">Где мы находимся?</h2>
+            <div class="block_location_map">
+                <div class="block_map">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeef8d1f4820651046fce8cf01b5e1c6728aa275997f02dc3fa548b9ab740f030&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="block_addresses">
+                    <div class="address">
+                        <p class="text_addresses_1">Люблинская ул., 169, корп. 2, ТЦ Мариэль этаж 3</p>
+                    </div>
+                    <div class="address">
+                        <p class="text_addresses_2">просп. Андропова, 22, ТЦ Нора этаж 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer background_footer">
+        <div class="block_footer_header">
+            <div class="block_footer_logo">
+                <img class="footer_logo" src="Изображения/Logo 2.png" alt="logo" />
+                <div class="block_logo_text">
+                    <p class="logo_text1">PRIDE</p>
+                    <p class="logo_text2">COFFEE</p>
+                </div>
+            </div>
+            <div class="client">
+                <p class="title_footer_menu">Клиентам</p>
+                <menu class="menu_client">
+                    <a href="#about_us">О нас</a>
+                    <a href="#menu">Меню</a>
+                    <a href="#great_deals">Акции</a>
+                    <a href="#news">Новинки</a>
+                </menu>
+            </div>
+            <div class="help">
+                <p class="title_footer_menu">Помощь</p>
+                <menu class="menu_help">
+                    <a href="#address">Адрес</a>
+                    <a href="https://eda.yandex.ru/restaurant/pride_auwyd?utm_campaign=delivery_1org_button&utm_content=desktop&utm_medium=yp&utm_source=Unisearch"
+                        target="_blank">Доставка</a>
+                    <button class="open_modal_vacansy_footer" id="open_modal_vacansy_footer">Вакансии</button>
+                </menu>
+            </div>
+            <div class="info">
+                <p class="title_footer_menu">Информация:</p>
+                <p class="text_footer_info">Часы работы: 10:00 - 22:00</p>
+                <a href="mailto:someone@yoursite.com">Отзывы и предложения: это_почта@gmail.com</a>
+                <button class="open_modal_feedback" id="open_modal_feedback">Обратная связь</button>
+            </div>
+        </div>
+        <div class="block_footer">
+            <p class="text_footer">Все права защищены мы молодцы</p>
+        </div>
+    </footer>
+    <div>
+        <div id="modal_feedback" class="modal_feedback">
+            <div class="modal_content_feedback">
+                <form class="submit_feedback" id="form_feedback" name="form_feedback" action="" method="post">
+                    <a class="close_feedback">&times;</a>
+                    <h3 class="feedback_title">Обратная связь</h3>
+                    <h3 class="popup_name_feedback">Имя</h3>
+                    <input class="input_name_feedback" type="name" name="name" placeholder="Иван" required minlength="2"
+                        maxlength="50" pattern="[A-Za-zА-Яа-яЁё\s]+" title="Имя должно содержать только буквы">
+                    <h3 class="popup_number_feedback">Номер телефона</h3>
+                    <input class="input_phone_feedback" type="tel" id="phone" name="phone" placeholder="8 123 456 78 90"
+                        required pattern="^((\+7|7|8)+([0-9]){10})$"
+                        title="Номер телефона должен быть в формате +7, 7, 8, (XXX)XXX-XX-XX, XXXXXXXXXX, (XXX)XXX-XXXX, где X - цифра">
+                    <h3 class="popup_about_feedback">Ваши вопросы</h3>
+                    <textarea class="input_about_feedback" name="popup_about_feedback"></textarea>
+    
+                    <p class="privacy_box_feedback">
+                        <input class="checked_feedback" type="checkbox" name="privacy_feedback" value="1" required>
+                        <a class="privacy_text_feedback" href="#window_feedback">Я согласен на обработку
+                            персональных данных</a>
+                    </p>
+                    <div class="button_box_feedback">
+                        <input class="submit_btn_feedback" type="submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
+            <div id="window_feedback">
+                <p>Документ об обработке данных, завещание, переписать вашу квартиру на нас и тд</p>
+                <a href="#" class="close_privacy_feedback">Закрыть окно</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="modal_vacansy" id="modal_vacansy">
+            <div class="modal_content_vacansy">
+                <div class="block_vacansy_info">
+                    <div class="block_vacansy_title">
+                        <h3 class="modal_vacansy_title">Информация о вакансиях</h3>
+                    </div>
+                    <a class="close_vacansy">&times;</a>
+                </div>
+                <div class="modal_vacansy_info">
+                    <div class="vacansy_info_text">
+                        <div class="block_vacansy_text1">
+                            <h2 class="modal_vacansy_subtitle">Бариста - еще одна фишка PRIDE COFFEE</h2>
+                            <p class="modal_vacansy_text">Бариста в нашем Прайде - это профессионалы, которые постоянно обучаются и
+                                развиваются. Так
+                                как мы растем, то в нашу семью нужны новые бариста.</p>
+                        </div>
+                        <div class="block_vacansy_text2">
+                            <h2 class="modal_vacansy_subtitle">От вас:</h2>
+                            <p class="modal_vacansy_text">Ищем добрых, открытых и активных ребят, у которых присутствует желание много
+                                учиться,
+                                трудиться и развиваться.
+                                Научим настраивать кофемашину, варить восхитительный эспрессо, взбивать божественную пену на латте, делать
+                                красочные
+                                милкшейки, делиться положительными эмоциями и улыбками.</p>
+                        </div>
+                        <div class="block_vacansy_text3">
+                            <h2 class="modal_vacansy_subtitle">От нас:</h2>
+                            <p class="modal_vacansy_text">2 дня обучения профессии бариста
+                                После обучения, если мы нравимся друг другу, график работы 2/2
+                                Зарплата от 42000 рублей.</p>
+                        </div>
+                    </div>
+                    <div class="modal_vacansy_popup">
+                        <form id="form_vacansy" class="submit" name="form_vacansy" action="" method="post">
+                            <h3 class="popup_name">Имя</h3>
+                            <input class="input_name" type="name" name="name" placeholder="Иван" required minlength="2"
+                                maxlength="50" pattern="[A-Za-zА-Яа-яЁё\s]+" title="Имя должно содержать только буквы">
+            
+                            <h3 class="popup_number">Номер телефона</h3>
+            
+                            <input class="input_number" type="tel" id="phone" name="phone" placeholder="8 123 456 78 90" required
+                                pattern="^((\+7|7|8)+([0-9]){10})$"
+                                title="Номер телефона должен быть в формате +7, 7, 8, (XXX)XXX-XX-XX, XXXXXXXXXX, (XXX)XXX-XXXX, где X - цифра">
+                            <h3 class="popup_about">Пару слов о себе</h3>
+            
+                            <textarea class="input_about" type="text" name="about" placeholder=""></textarea>
+            
+                            <p class="privacy_box">
+                                <input class="checked" type="checkbox" name="privacy_vacansy" value="1" required>
+                                <a class="privacy_text" href="#window_vacansy">Я согласен на обработку персональных
+                                    данных</a>
+                            </p>
+                            <div class="button_box">
+            
+                                <input class="submit_btn" type="submit" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="window_vacansy">
+                <p>Документ об обработке данных, завещание, переписать вашу квартиру на нас и тд</p>
+                <a href="#" class="close_privacy_vacansy">Закрыть окно</a>
+            </div>
+            </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+            console.log(scrollbar);
+            document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+                document.body.style.overflow = 'hidden';
+                document.querySelector('#openModal').style.marginLeft = scrollbar;
+            });
+            document.querySelector('[href="#close"]').addEventListener('click', function () {
+                document.body.style.overflow = 'visible';
+                document.querySelector('#openModal').style.marginLeft = '0px';
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.burger_menu').click(function () {
+                $('.burger_menu').toggleClass('open-menu');
+                $('.menu').toggleClass('open-menu');
+            });
+        });
+        $(document).ready(function () {
+            $('.burger_menu_close').click(function () {
+                $('.burger_menu_close').toggleClass('close-menu');
+                $('.menu').toggleClass('open-menu');
+            });
+        });
+    </script>
+</body>
+</html>

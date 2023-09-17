@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.modal_vacansy {
+    display: none;
+    /* по умолчанию модальное окно скрыто */
+    position: fixed;
+    /* позволяет модальному окну оставаться на месте, даже если страница прокручивается */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    /* позволяет модальному окну быть на переднем плане */
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+.modal_vacansy::-webkit-scrollbar {
+    width: 0px;
+}
+
+.modal_content_vacansy {
+    margin: 15% auto;
+    background: linear-gradient(180deg, #81AB8F 0%, #63826D 100%);
+    border-radius: 24px;
+    position: relative;
+    border: 2px solid #B3E4C4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+    max-width: 1030px;
+    max-height: 628px;
+}
+
+.modal_vacansy:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+.block_vacansy_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    max-width: 990px;
+    max-height: 46px;
+}
+
+@font-face {
+    font-family: 'Gabriela';
+    src: url(Шрифты/Gabriela/Gabriela-Regular.ttf);
+    font-weight: 400;
+}
+
+.block_vacansy_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 974px;
+    max-height: 46px;
+}
+
+.modal_vacansy_title {
+    font-family: 'Gabriela';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    align-items: center;
+    color: #F6F6F6;
+}
+
+
+.close_vacansy {
+    font-family: sans-serif;
+    font-weight: 500;
+    display: flex;
+    color: #3E3634;
+    width: 16px;
+    height: 16px;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.modal_vacansy_popup {
+    width: 410px;
+    height: 494px;
+    text-align: center;
+    background-color: #C3B1A3;
+    border-radius: 10px;
+    border: 2px solid #BF916C;
+}
+
+.modal_vacansy_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    max-width: 990px;
+    max-height: 502px;
+}
+
+
+.vacansy_info_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    max-width: 540px;
+    max-height: 502px;
+}
+
+.block_vacansy_text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    max-width: 540px;
+    max-height: 130px;
+}
+
+.block_vacansy_text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    max-width: 540px;
+    max-height: 202px;
+}
+
+.block_vacansy_text3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    max-width: 540px;
+    max-height: 130px;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Шрифты/Montserrat/Montserrat-Medium.ttf);
+    font-weight: 600;
+}
+
+
+.modal_vacansy_subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #F7F7F7;
+    line-height: 24px;
+}
+
+.modal_vacansy_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F7F7F7;
+}
+
+.popup_name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #3E3634;
+}
+
+.popup_number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #3E3634;
+}
+
+.popup_about {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #3E3634;
+}
+
+.input_name {
+    width: 359px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 20px;
+    border: 1px solid #666666;
+    color: #CCCCCC;
+    outline: none;
+}
+
+.input_number {
+    width: 359px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 20px;
+    border: 1px solid #666666;
+    color: #CCCCCC;
+    outline: none;
+}
+
+.input_about {
+    width: 381px;
+    height: 134px;
+    border-radius: 4px;
+    border: 1px solid #666666;
+    outline: none;
+    resize: none;
+}
+
+.privacy_box {
+    padding-top: 10px;
+}
+
+.checked {
+    text-decoration: none;
+}
+
+.privacy_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.8px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #3E3634;
+}
+
+.button_box {
+    padding-top: 30px;
+}
+
+@font-face {
+    font-family: 'Mail Sans Roman';
+    src: url(Шрифты/font/MailSansRoman-Light.ttf);
+    font-weight: 400;
+}
+
+.submit_btn {
+    width: 121px;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7F6D60;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Mail Sans Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFEFD;
+}
+.submit_btn:hover,
+.submit_btn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  color: #34fdf6;
+}
+
+#window_vacansy {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+}
+
+#window_vacansy:target {
+    display: block;
+    flex-direction: column;
+}
+
+.close_privacy_vacansy {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+  /* ---------------------------------------------------------------------744-1024------------------------------------------------------------------------*/
+
+  @media (min-width: 744px) and (max-width: 1024px) {
+    
+    .modal_content_vacansy {
+        padding: 20px;
+        gap: 40px;
+        max-width: 744px;
+        max-height: 628px;
+    }
+    
+    .block_vacansy_info {
+        max-width: 715px;
+        max-height: 46px;
+    }
+    
+    
+    .vacansy_info_text {
+        gap: 20px;
+        max-width: 390px;
+        max-height: 502px;
+    }
+    
+    .block_vacansy_text1 {
+        gap: 10px;
+        max-width: 390px;
+        max-height: 130px;
+    }
+    
+    .block_vacansy_text2 {
+        gap: 10px;
+        max-width: 390px;
+        max-height: 202px;
+    }
+
+    .block_vacansy_text3 {
+        gap: 10px;
+        max-width: 390px;
+        max-height: 130px;
+    }
+
+
+    .modal_vacansy_popup {
+        width: 296px;
+        height: 494px;
+    }
+
+    .modal_vacansy_text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .privacy_text {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .input_name {
+        width: 259px;
+    }
+
+    .input_number {
+        width: 259px;
+    }
+
+    .input_about {
+        width: 275px;
+    }
+
+  }
+  
+  /* ---------------------------------------------------------------------744-1024------------------------------------------------------------------------*/
+  /*---------------------------------------------------------mobile_adaptive_360-744-----------------------------------------*/
+@media(min-width: 320px) and (max-width: 744px){
+      
+    .modal_content_vacansy {
+        padding: 10px;
+        gap: 20px;
+        max-width: 330px;
+        max-height: 1160px;
+        border-radius: 15px;
+    }
+
+    .modal_vacansy_info {
+        flex-direction: column;
+        padding: 0px;
+        gap: 20px;
+        max-width: 990px;
+        max-height: 1071px;
+    }
+    
+    .block_vacansy_info {
+        max-width: 330px;
+        max-height: 46px;
+    }
+
+    .modal_vacansy_title {
+        font-size: 23px;
+        line-height: 40px;
+    }
+    
+    .vacansy_info_text {
+        gap: 20px;
+        max-width: 390px;
+        max-height: 546px;
+    }
+    
+    .block_vacansy_text1 {
+        max-width: 330px;
+        max-height: 180px;
+    }
+    
+    .block_vacansy_text2 {
+        max-width: 330px;
+        max-height: 234px;
+    }
+
+    .block_vacansy_text3 {
+        gap: 10px;
+        max-width: 390px;
+        max-height: 130px;
+    }
+
+
+    .modal_vacansy_popup {
+        width: 296px;
+        height: 494px;
+    }
+
+    .modal_vacansy_text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .privacy_text {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .block_vacansy_title {
+        width: 330px;
+    }
+
+    .input_name {
+        width: 259px;
+    }
+
+    .input_number {
+        width: 259px;
+    }
+
+    .input_about {
+        width: 275px;
+    }
+
+    .button_box {
+        padding-top: 20px;
+    }
+
+    .modal_vacansy_subtitle {
+        font-size: 18px;
+    }
+
+    .close_vacansy {
+        width: 14px;
+        height: 14px;
+        font-size: 22px;
+    }
+}

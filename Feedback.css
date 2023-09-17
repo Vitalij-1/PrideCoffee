@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Стили для модального окна */
+.modal_feedback {
+    display: none;
+    /* по умолчанию модальное окно скрыто */
+    position: fixed;
+    /* позволяет модальному окну оставаться на месте, даже если страница прокручивается */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    /* позволяет модальному окну быть на переднем плане */
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+.modal_feedback::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Стили для содержимого модального окна */
+.modal_content_feedback {
+    background-color: #C3B1A3;
+    margin: 15% auto;
+    border: 2px solid #BF916C;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    height: 580px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal_feedback:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+/* Стили для кнопки закрытия */
+.close_feedback {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 2;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #3E3634;
+    width: 16px;
+    height: 16px;
+    font-size: 40px;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Шрифты/Montserrat/Montserrat-Medium.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Gabriela';
+    src: url(Шрифты/Gabriela/Gabriela-Regular.ttf);
+    font-weight: 400;
+}
+
+.feedback_title {
+    font-family: 'Gabriela';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #3E3634;
+    padding-top: 20px;
+}
+
+.popup_name_feedback {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #3E3634;
+}
+
+.popup_number_feedback {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #3E3634;
+}
+
+.popup_about_feedback {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #3E3634;
+}
+
+.input_name_feedback {
+    width: 359px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 20px;
+    border: 1px solid #666666;
+    outline: none;
+}
+
+.input_phone_feedback {
+    width: 359px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 20px;
+    border: 1px solid #666666;
+    outline: none;
+}
+
+.input_about_feedback {
+    width: 381px;
+    height: 134px;
+    border-radius: 4px;
+    resize: none;
+    border: 1px solid #666666;
+    outline: none;
+}
+
+.privacy_box_feedback {
+    padding-top: 10px;
+}
+
+.privacy_text_feedback {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.8px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #3E3634;
+}
+
+.button_box_feedback {
+    padding-top: 40px;
+}
+
+@font-face {
+    font-family: 'Mail Sans Roman';
+    src: url(Шрифты/font/MailSansRoman-Light.ttf);
+    font-weight: 400;
+}
+
+.submit_btn_feedback {
+    width: 121px;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7F6D60;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Mail Sans Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFEFD;
+}
+.submit_btn_feedback:hover,
+.submit_btn_feedback:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  color: #34fdf6;
+}
+
+
+#window_feedback {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+}
+
+#window_feedback:target {
+    display: block;
+    flex-direction: column;
+}
+
+.close_privacy_feedback {
+    font-size: 16px;
+    text-decoration: none;
+}
+  /*---------------------------------------------------------mobile_adaptive_360-744-----------------------------------------*/
+  @media(min-width: 320px) and (max-width: 744px){
+    
+    .feedback_title {
+        padding-top: 30px;
+    }
+
+    .popup_name_feedback {
+        padding-top: 20px;
+    }
+
+    .modal_content_feedback {
+        width: 296px;
+        height: 562px;
+    }
+
+    .feedback_title {
+        font-size: 30px;
+    }
+
+    .input_name_feedback {
+        width: 259px;
+    }
+
+    .input_phone_feedback {
+        width: 259px;
+    }
+
+    .input_about_feedback {
+        width: 275px;
+    }
+
+    .privacy_text_feedback {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .button_box {
+        padding-top: 20px;
+    }
+
+    .button_box_feedback {
+        padding-top: 20px;
+    }
+
+    .close_feedback {
+        width: 14px;
+        height: 14px;
+        font-size: 22px;
+    }
+}
